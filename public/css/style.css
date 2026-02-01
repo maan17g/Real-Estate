@@ -185,19 +185,65 @@ nav .active {
   background-position: center;
   z-index: -2;
 }
-.loader{
-  width: 100%;
-  height: 100%;
-  background-color: #1e6341;
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #191B0F;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  z-index: 199;
-  top: 0;
-  left: 0;
-  
+  z-index: 9999;
 }
+
+.loader {
+  text-align: center;
+  color: #fff;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.loader h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.loader h1 span {
+  color: #3CB57C;
+}
+
+.loader p {
+  margin-top: 8px;
+  color: #8aa894;
+  font-size: 0.9rem;
+}
+
+.ring {
+  width: 70px;
+  height: 70px;
+  border: 4px solid #19221D;
+  border-top: 4px solid #3CB57C;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hide animation */
+.preloader-hide {
+  animation: fadeOut 0.8s ease forwards;
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+
 
 .hero-overlay {
   position: absolute;

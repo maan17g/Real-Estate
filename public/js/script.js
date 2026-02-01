@@ -39,8 +39,12 @@ counters.forEach((counter) => {
   }, 10);
 });
 
-let loader=document.querySelector(".loader");
-window.addEventListener("load",(en)=>{
-        loader.style.display="none";
-        console.log(en)
-});
+  window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    preloader.classList.add("preloader-hide");
+
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 800);
+  });
+
