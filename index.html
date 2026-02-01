@@ -19,6 +19,11 @@
 </head>
 
 <body data-theme="dark">
+      <div class="loader">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
 
     <!-- Header / Navbar -->
     <header>
@@ -257,19 +262,20 @@
                         <div class="container">
                             <div class="row gap-0 gap-md-5 justify-content-between px-2 my-5">
                                 <div class="col-3 count justify-content-center d-flex align-items-center flex-column ">
-                                   <h2 class="m-0 counter counter-1" data-bs-start="0" data-bs-end="500" data-bs-sign="+">
+                                    <h2 class="m-0 counter counter-1" data-bs-start="0" data-bs-end="500"
+                                        data-bs-sign="+">
                                         500+
                                     </h2>
                                     <span class="text-muted-custom text-center">Properties Listed</span>
                                 </div>
                                 <div class="col-3 count p-3 d-flex align-items-center flex-column ">
-                                     <h2 class="counter" data-bs-start="0" data-bs-end="150" data-bs-sign="+">
+                                    <h2 class="counter" data-bs-start="0" data-bs-end="150" data-bs-sign="+">
                                         150+
                                     </h2>
                                     <span class="text-muted-custom text-center">Satisfied Client</span>
                                 </div>
                                 <div class="col-3 count p-3 d-flex align-items-center flex-column ">
-                                    <h2  class="counter" data-bs-start="0" data-bs-end="98" data-bs-sign="%">
+                                    <h2 class="counter" data-bs-start="0" data-bs-end="98" data-bs-sign="%">
                                         98%
                                     </h2>
                                     <span class="text-muted-custom text-center">Client Satisfaction</span>
@@ -296,72 +302,83 @@
                 </div>
             </div>
         </section>
-      <section class="testimonial-section">
-    <div class="container">
-        <div class="row align-items-end mb-5">
-            <div class="col-lg-7">
-                <span class="text-uppercase small fw-medium text-primary-custom" style="letter-spacing: 3px;">
-                    <span class="section-line"></span>Perspectives
-                </span>
-                <h2 class="editorial-title">What it feels like to <br><i style="font-weight: normal; opacity: 0.8;">finally</i> be home.</h2>
-            </div>
-            <div class="col-lg-5 text-lg-end">
-                <p class="text-muted-custom mb-4" style="max-width: 400px; margin-left: auto;">
-                    A collection of experiences from the homeowners who redefined their lifestyle with Real Estate.
-                </p>
-            </div>
-        </div>
+        
 
-        <div class="row g-0">
-            <div class="col-lg-4">
-                <div class="sleek-card">
-                    <p class="quote-content">
-                        “The attention to detail wasn't just in the properties, but in the way they handled our transaction. It felt less like a transaction and more like a curated introduction to our new life.”
-                    </p>
-                    <div class="author-wrap">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&h=100&fit=crop" class="author-img" alt="Marcus">
-                        <div>
-                            <h6 class="author-name">Marcus Alexander</h6>
-                            <span class="author-label">Homeowner, Bel Air</span>
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="row align-items-end mb-5">
+                    <div class="col-lg-7">
+                        <span class="text-uppercase small fw-medium text-primary-custom" style="letter-spacing: 3px;">
+                            <span class="section-line"></span>Perspectives
+                        </span>
+                        <h2 class="editorial-title">What it feels like to <br><i
+                                style="font-weight: normal; opacity: 0.8;">finally</i> be home.</h2>
+                    </div>
+                    <div class="col-lg-5 text-lg-end">
+                        <p class="text-muted-custom mb-4" style="max-width: 400px; margin-left: auto;">
+                            A collection of experiences from the homeowners who redefined their lifestyle with Real
+                            Estate.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <div class="sleek-card">
+                            <p class="quote-content">
+                                “The attention to detail wasn't just in the properties, but in the way they handled our
+                                transaction. It felt less like a transaction and more like a curated introduction to our
+                                new life.”
+                            </p>
+                            <div class="author-wrap">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&h=100&fit=crop"
+                                    class="author-img" alt="Marcus">
+                                <div>
+                                    <h6 class="author-name">Marcus Alexander</h6>
+                                    <span class="author-label">Homeowner, Bel Air</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="sleek-card">
+                            <p class="quote-content">
+                                “Finding a space that aligns with both your aesthetic and your routine is rare. They
+                                didn't stop until every box was checked, including ones we hadn't thought of yet.”
+                            </p>
+                            <div class="author-wrap">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&h=100&fit=crop"
+                                    class="author-img" alt="Jessica">
+                                <div>
+                                    <h6 class="author-name">Jessica Sterling</h6>
+                                    <span class="author-label">Homeowner, Chelsea</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="sleek-card">
+                            <p class="quote-content">
+                                “Transparency in this market is hard to come by. Having a partner who prioritized our
+                                long-term equity over a quick sale was the reason we chose this team.”
+                            </p>
+                            <div class="author-wrap">
+                                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=100&h=100&fit=crop"
+                                    class="author-img" alt="Robert">
+                                <div>
+                                    <h6 class="author-name">Robert Chen</h6>
+                                    <span class="author-label">Investor & Resident</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-4">
-                <div class="sleek-card">
-                    <p class="quote-content">
-                        “Finding a space that aligns with both your aesthetic and your routine is rare. They didn't stop until every box was checked, including ones we hadn't thought of yet.”
-                    </p>
-                    <div class="author-wrap">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&h=100&fit=crop" class="author-img" alt="Jessica">
-                        <div>
-                            <h6 class="author-name">Jessica Sterling</h6>
-                            <span class="author-label">Homeowner, Chelsea</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-4">
-                <div class="sleek-card">
-                    <p class="quote-content">
-                        “Transparency in this market is hard to come by. Having a partner who prioritized our long-term equity over a quick sale was the reason we chose this team.”
-                    </p>
-                    <div class="author-wrap">
-                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=100&h=100&fit=crop" class="author-img" alt="Robert">
-                        <div>
-                            <h6 class="author-name">Robert Chen</h6>
-                            <span class="author-label">Investor & Resident</span>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-
-    
-    </div>
-    </section>
+        </section>
         <section class="contact-section mb-3 p-4">
 
             <div class="container">

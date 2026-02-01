@@ -38,3 +38,9 @@ counters.forEach((counter) => {
     if (i > end) clearInterval(interval);
   }, 10);
 });
+
+let loader=document.querySelector(".loader");
+window.addEventListener("load",(en)=>{
+        loader.style.display="none";
+        console.log(en)
+});
