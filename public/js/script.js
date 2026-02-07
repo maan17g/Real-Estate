@@ -24,17 +24,27 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("nav-scroll");
   }
 });
-// for counter
 const counters = document.querySelectorAll(".counter");
-let totalsec=2;
-counters.forEach(counter => {
+
+counters.forEach((counter) => {
   const start = +counter.dataset.bsStart;
   const end = +counter.dataset.bsEnd;
-  const sign= counter.dataset.bsSign;
+  const sign = counter.dataset.bsSign;
   let i = start;
- const interval=setInterval(() => {
-    counter.innerHTML=i+sign;
+
+  const interval = setInterval(() => {
+    counter.innerHTML = i + sign;
     i++;
-    if(i>end) clearInterval(interval);
-  }, 1000/(end/totalsec));
+    if (i > end) clearInterval(interval);
+  }, 10);
 });
+
+  window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    preloader.classList.add("preloader-hide");
+
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 800);
+  });
+
