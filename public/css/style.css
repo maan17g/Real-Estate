@@ -996,15 +996,16 @@ nav .active {
 }
 
 .stat-divider {
-  width: 1px;
-  height: 60px;
-  background: rgba(255, 255, 255, 0.3);
-  margin: 0 auto;
+ border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 
 .cta-section {
   padding: 80px 0;
   background-color: var(--bg-body);
+}
+.cta-hvr-btn:hover{
+background-color: var(--footer-bg);
 }
 
 .cta-box {
