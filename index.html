@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dream Home - Find your perfect property with verified listings and expert guidance">
+    <meta name="keywords" content="real estate, property, homes, apartments, villas">
     <title>Dream Home - Find Your Perfect Place</title>
 
     <!-- Bootstrap CSS -->
@@ -11,28 +13,19 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 
 <body data-theme="dark">
-<div id="preloader">
-  <div class="loader">
-    <span class="ring"></span>
-    <h1>Dream <span>Home</span></h1>
-    <p>Finding your perfect space</p>
-  </div>
-</div>
-
 
     <!-- Header / Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="#">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <i class="bi bi-house-door-fill"></i> Real Estate
                 </a>
 
@@ -43,10 +36,10 @@
 
                 <div class="collapse navbar-collapse" id="navContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
-                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Properties</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="property.html">Properties</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
 
                     <div class="d-flex align-items-center gap-3 flex-column flex-lg-row mt-3 mt-lg-0">
@@ -55,8 +48,8 @@
                             <i class="bi bi-sun-fill"></i>
                         </button>
 
-                        <a href="#" class="nav-link fw-bold">Login</a>
-                        <a href="#" class="btn btn-consult shadow-sm">
+                        <a href="login.html" class="nav-link fw-bold">Login</a>
+                        <a href="contact-us.html" class="btn btn-consult shadow-sm">
                             <i class="bi bi-telephone me-2"></i> Consult
                         </a>
                     </div>
@@ -78,8 +71,7 @@
                     </div>
                     <h1 class="hero-title mb-3">Find your Perfect <br><span>Dream Home</span></h1>
                     <p class="hero-desc">
-                        Explore verified listings, get expert guidance, and find the property that fits your lifestyle
-                        perfectly.
+                        Explore verified listings, get expert guidance, and find the property that fits your lifestyle perfectly.
                     </p>
                 </div>
             </div>
@@ -124,107 +116,16 @@
             </div>
         </section>
 
-        <!-- Feature Property Section (EDITED) -->
+        <!-- Feature Property Section -->
         <section class="feature-property">
-            <div class="container">
+            <div class="container" id="container-prop">
                 <!-- Section Header -->
                 <div class="text-start mb-3">
                     <h6 class="text-primary-custom text-uppercase letter-spacing-2 fw-bold">Featured Listings</h6>
                     <h2 class="display-6 fw-bold">Recently Added Luxury Homes</h2>
                 </div>
-                <div class="row g-4 justify-content-center">
-                    <!-- Card 1: Modern Luxury Villa (Changed to col-lg-4 col-md-6) -->
-                    <div class="col-lg-4 col-md-6 fprop-card">
-                        <div class="card property-card border-0">
-                            <div class="card-image-wrapper">
-                                <!-- Used Bootstrap positioning utilities -->
-                                <span class="badge-custom position-absolute top-0 start-0 m-3">For Sale</span>
-                                <span class="badge-price position-absolute bottom-0 end-0 m-3">$850,000</span>
-                                <img src="public/images/feat-prop-3.jpeg" alt="Modern Luxury Villa">
-                            </div>
-
-                            <div class="card-body p-4">
-                                <h5 class="card-title mb-2">Modern Luxury Villa</h5>
-                                <p class="card-location mb-3 d-flex align-items-center">
-                                    <i class="bi bi-geo-alt-fill me-2"></i> Beverly Hills, CA
-                                </p>
-
-                                <!-- Features Row using Bootstrap Flex utilities -->
-                                <div class="card-features d-flex justify-content-between pt-3 feature-border">
-                                    <div class="feature-item d-flex align-items-center">
-                                        <i class="bi bi-door-open"></i> 5 Beds
-                                    </div>
-                                    <div class="feature-item d-flex align-items-center">
-                                        <i class="bi bi-droplet-half"></i> 4 Baths
-                                    </div>
-                                    <div class="feature-item d-flex align-items-center">
-                                        <i class="bi bi-arrows-fullscreen"></i> 4,500 sqft
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2: Ocean View Penthouse (New Card) -->
-                    <div class="col-lg-4 col-md-6 fprop-card">
-                        <div class="card property-card border-0">
-                            <div class="card-image-wrapper">
-                                <span class="badge-custom position-absolute top-0 start-0 m-3">New Listing</span>
-                                <span class="badge-price position-absolute bottom-0 end-0 m-3">$2,100,000</span>
-                                <img src="public/images/feat-prop-2.jpeg" alt="Downtown Penthouse">
-                            </div>
-
-                            <div class="card-body p-4">
-                                <h5 class="card-title mb-2">Ocean View Penthouse</h5>
-                                <p class="card-location mb-3 d-flex align-items-center">
-                                    <i class="bi bi-geo-alt-fill me-2"></i> Miami, FL
-                                </p>
-
-                                <div class="card-features d-flex justify-content-between pt-3 feature-border">
-                                    <div class="feature-item d-flex align-items-center">
-                                        <i class="bi bi-door-open"></i> 3 Beds
-                                    </div>
-                                    <div class="feature-item d-flex align-items-center">
-                                        <i class="bi bi-droplet-half"></i> 4 Baths
-                                    </div>
-                                    <div class="feature-item d-flex align-items-center">
-                                        <i class="bi bi-arrows-fullscreen"></i> 3,200 sqft
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3: Modern Family Townhouse (New Card) -->
-                    <div class="col-lg-4 col-md-6 fprop-card">
-                        <div class="card property-card border-0">
-                            <div class="card-image-wrapper">
-                                <span class="badge-custom position-absolute top-0 start-0 m-3">For Rent</span>
-                                <span class="badge-price position-absolute bottom-0 end-0 m-3">$6,500/mo</span>
-                                <img src="public/images/feat-prop-1.jpeg" alt="Townhouse">
-                            </div>
-
-                            <div class="card-body p-4">
-                                <h5 class="card-title mb-2">Modern Family Townhouse</h5>
-                                <p class="card-location mb-3 d-flex align-items-center">
-                                    <i class="bi bi-geo-alt-fill me-2"></i> Seattle, WA
-                                </p>
-
-                                <div class="card-features d-flex justify-content-between pt-3 feature-border">
-                                    <div class="feature-item d-flex align-items-center">
-                                        <i class="bi bi-door-open"></i> 4 Beds
-                                    </div>
-                                    <div class="feature-item d-flex align-items-center">
-                                        <i class="bi bi-droplet-half"></i> 3 Baths
-                                    </div>
-                                    <div class="feature-item d-flex align-items-center">
-                                        <i class="bi bi-arrows-fullscreen"></i> 2,800 sqft
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="row g-4 justify-content-center cont-prop">
+                    <!-- Properties will be loaded by JavaScript -->
                 </div>
             </div>
         </section>
@@ -232,16 +133,14 @@
         <!-- About / Features Section -->
         <section class="about-section">
             <div class="container">
-                <div class="row align-items-center gy-0 ">
+                <div class="row align-items-center gy-5">
 
                     <!-- Text Content -->
                     <div class="col-lg-6">
                         <h6 class="text-primary-custom text-uppercase letter-spacing-2 fw-bold">Who are we</h6>
-                        <h2 class="display-6 fw-bold mb-4">Assisting individuals in locating the appropriate Real Estate
-                        </h2>
+                        <h2 class="display-6 fw-bold mb-4">Assisting individuals in locating the appropriate Real Estate</h2>
                         <p class="text-muted-custom mb-4">
-                            We guide you through every step of your home-finding journey, offering trusted insights,
-                            verified listings, and a smooth decision-making experience.
+                            We guide you through every step of your home-finding journey, offering trusted insights, verified listings, and a smooth decision-making experience.
                         </p>
 
                         <div class="row g-3">
@@ -249,55 +148,44 @@
                                 <div class="feature-box">
                                     <div class="icon-box"><i class="fas fa-home fa-2x"></i></div>
                                     <h5 class="fw-bold mb-2">Smart Matching</h5>
-                                    <p class="small text-muted-custom mb-0">We analyze your needs and match you with
-                                        homes that fit your lifestyle.</p>
+                                    <p class="small text-muted-custom mb-0">We analyze your needs and match you with homes that fit your lifestyle.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="feature-box">
                                     <div class="icon-box"><i class="fas fa-certificate fa-2x"></i></div>
                                     <h5 class="fw-bold mb-2">Expert Guidance</h5>
-                                    <p class="small text-muted-custom mb-0">Clear advice, real-time support, and
-                                        transparency for every property.</p>
+                                    <p class="small text-muted-custom mb-0">Clear advice, real-time support, and transparency for every property.</p>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="container">
                             <div class="row gap-0 gap-md-5 justify-content-between px-2 my-5">
-                                <div class="col-3 count justify-content-center d-flex align-items-center flex-column ">
-                                    <h2 class="m-0 counter counter-1" data-bs-start="0" data-bs-end="500"
-                                        data-bs-sign="+">
-                                        500+
-                                    </h2>
+                                <div class="col-3 count justify-content-center d-flex align-items-center flex-column">
+                                    <h2 class="m-0 counter" data-bs-start="0" data-bs-end="500" data-bs-sign="+">500+</h2>
                                     <span class="text-muted-custom text-center">Properties Listed</span>
                                 </div>
-                                <div class="col-3 count p-3 d-flex align-items-center flex-column ">
-                                    <h2 class="counter" data-bs-start="0" data-bs-end="150" data-bs-sign="+">
-                                        150+
-                                    </h2>
+                                <div class="col-3 count p-3 d-flex align-items-center flex-column">
+                                    <h2 class="counter" data-bs-start="0" data-bs-end="150" data-bs-sign="+">150+</h2>
                                     <span class="text-muted-custom text-center">Satisfied Client</span>
                                 </div>
-                                <div class="col-3 count p-3 d-flex align-items-center flex-column ">
-                                    <h2 class="counter" data-bs-start="0" data-bs-end="98" data-bs-sign="%">
-                                        98%
-                                    </h2>
+                                <div class="col-3 count p-3 d-flex align-items-center flex-column">
+                                    <h2 class="counter" data-bs-start="0" data-bs-end="98" data-bs-sign="%">98%</h2>
                                     <span class="text-muted-custom text-center">Client Satisfaction</span>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
 
                     <!-- Image Composition -->
                     <div class="col-lg-6">
                         <div class="image-stack">
-                            <!-- Using Unsplash placeholders -->
                             <div class="img-blob-1">
-                                <img src="public/images/about-us-3.jpeg" class="img-cover" alt="Modern House">
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" class="img-cover" alt="Modern House">
                             </div>
                             <div class="img-blob-2">
-                                <img src="public/images/about-us-2.jpeg" class="img-cover" alt="Real Estate Agent">
+                                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=400&q=80" class="img-cover" alt="Real Estate Agent">
                             </div>
                         </div>
                     </div>
@@ -305,8 +193,8 @@
                 </div>
             </div>
         </section>
-        
 
+        <!-- Testimonials Section -->
         <section class="testimonial-section">
             <div class="container">
                 <div class="row align-items-end mb-5">
@@ -314,13 +202,11 @@
                         <span class="text-uppercase small fw-medium text-primary-custom" style="letter-spacing: 3px;">
                             <span class="section-line"></span>Perspectives
                         </span>
-                        <h2 class="editorial-title">What it feels like to <br><i
-                                style="font-weight: normal; opacity: 0.8;">finally</i> be home.</h2>
+                        <h2 class="editorial-title">What it feels like to <br><i style="font-weight: normal; opacity: 0.8;">finally</i> be home.</h2>
                     </div>
                     <div class="col-lg-5 text-lg-end">
                         <p class="text-muted-custom mb-4" style="max-width: 400px; margin-left: auto;">
-                            A collection of experiences from the homeowners who redefined their lifestyle with Real
-                            Estate.
+                            A collection of experiences from the homeowners who redefined their lifestyle with Real Estate.
                         </p>
                     </div>
                 </div>
@@ -329,13 +215,10 @@
                     <div class="col-lg-4">
                         <div class="sleek-card">
                             <p class="quote-content">
-                                “The attention to detail wasn't just in the properties, but in the way they handled our
-                                transaction. It felt less like a transaction and more like a curated introduction to our
-                                new life.”
+                                "The attention to detail wasn't just in the properties, but in the way they handled our transaction. It felt less like a transaction and more like a curated introduction to our new life."
                             </p>
                             <div class="author-wrap">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&h=100&fit=crop"
-                                    class="author-img" alt="Marcus">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&h=100&fit=crop" class="author-img" alt="Marcus">
                                 <div>
                                     <h6 class="author-name">Marcus Alexander</h6>
                                     <span class="author-label">Homeowner, Bel Air</span>
@@ -347,12 +230,10 @@
                     <div class="col-lg-4">
                         <div class="sleek-card">
                             <p class="quote-content">
-                                “Finding a space that aligns with both your aesthetic and your routine is rare. They
-                                didn't stop until every box was checked, including ones we hadn't thought of yet.”
+                                "Finding a space that aligns with both your aesthetic and your routine is rare. They didn't stop until every box was checked, including ones we hadn't thought of yet."
                             </p>
                             <div class="author-wrap">
-                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&h=100&fit=crop"
-                                    class="author-img" alt="Jessica">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&h=100&fit=crop" class="author-img" alt="Jessica">
                                 <div>
                                     <h6 class="author-name">Jessica Sterling</h6>
                                     <span class="author-label">Homeowner, Chelsea</span>
@@ -364,12 +245,10 @@
                     <div class="col-lg-4">
                         <div class="sleek-card">
                             <p class="quote-content">
-                                “Transparency in this market is hard to come by. Having a partner who prioritized our
-                                long-term equity over a quick sale was the reason we chose this team.”
+                                "Transparency in this market is hard to come by. Having a partner who prioritized our long-term equity over a quick sale was the reason we chose this team."
                             </p>
                             <div class="author-wrap">
-                                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=100&h=100&fit=crop"
-                                    class="author-img" alt="Robert">
+                                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=100&h=100&fit=crop" class="author-img" alt="Robert">
                                 <div>
                                     <h6 class="author-name">Robert Chen</h6>
                                     <span class="author-label">Investor & Resident</span>
@@ -378,14 +257,13 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </section>
-        <section class="contact-section mb-3 p-4">
 
+        <!-- Contact Section -->
+        <section class="contact-section mb-3 p-4">
             <div class="container">
-                <h6 class="text-primary-custom text-uppercase letter-spacing-2 fw-bold">Contact us</h6>
+                <h6 class="text-primary-custom text-uppercase letter-spacing-2 fw-bold">Get In Touch</h6>
                 <h2 class="display-6 fw-bold mb-4">Have Questions? Reach Out to Us</h2>
                 <div class="row g-5">
                     <div class="col-lg-5">
@@ -408,8 +286,7 @@
                                 <div class="contact-info-card">
                                     <i class="bi bi-envelope-fill"></i>
                                     <h5>Email Us</h5>
-                                    <p>info@greenvistarealty.com<br><span class="small opacity-75">We respond within 24
-                                            hours</span></p>
+                                    <p>info@greenvistarealty.com<br><span class="small opacity-75">We respond within 24 hours</span></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -421,13 +298,9 @@
                             </div>
                         </div>
 
-                        <!-- FIX: Prevent map overflow on all screens -->
                         <div class="map-wrapper mt-4">
                             <div class="ratio ratio-16x9 map-ratio">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.4929947820883!2d71.47017897440747!3d30.223014874834096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b33854e735d97%3A0xac35e804dff3bf59!2sDevelopers%20Point%20(Pvt)%20Ltd!5e0!3m2!1sen!2s!4v1769175404698!5m2!1sen!2s"
-                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
-                                </iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.4929947820883!2d71.47017897440747!3d30.223014874834096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b33854e735d97%3A0xac35e804dff3bf59!2sDevelopers%20Point%20(Pvt)%20Ltd!5e0!3m2!1sen!2s!4v1769175404698!5m2!1sen!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -451,16 +324,14 @@
                                     </div>
                                     <div class="col-12">
                                         <label class="form-label small">Message *</label>
-                                        <textarea class="form-control" rows="5"
-                                            placeholder="Tell us about your real estate needs..."></textarea>
+                                        <textarea class="form-control" rows="5" placeholder="Tell us about your real estate needs..."></textarea>
                                     </div>
                                     <div class="col-12 mt-4">
                                         <button type="submit" class="btn btn-search w-100 py-3">
                                             <i class="bi bi-send me-2"></i> Send Message
                                         </button>
                                         <p class="small text-muted-custom mt-3 text-center">
-                                            By submitting this form, you agree to our privacy policy and consent to
-                                            being contacted regarding your inquiry.
+                                            By submitting this form, you agree to our privacy policy and consent to being contacted regarding your inquiry.
                                         </p>
                                     </div>
                                 </div>
@@ -471,66 +342,83 @@
             </div>
         </section>
 
-
-
     </main>
-    <footer class="footer pb-3">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <h5 class="text-uppercase fw-bold mb-3">Dream Home</h5>
-                    <p class="small text-muted-custom">Building places your proud to call home — today, tomorrow,
-                        forever.</p>
-                </div>
-                <div class="col-lg-2 col-md-4">
-                    <h5 class="text-uppercase fw-bold mb-3">Customer Service</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted-custom text-decoration-none small">Contact Us</a></li>
-                        <li><a href="#" class="text-muted-custom text-decoration-none small">FAQs</a></li>
-                        <li><a href="#" class="text-muted-custom text-decoration-none small">Returns & Exchanges</a>
-                        </li>
-                        <li><a href="#" class="text-muted-custom text-decoration-none small">Insurance</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-4">
-                    <h5 class="text-uppercase fw-bold mb-3">Information</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted-custom text-decoration-none small">About Us</a></li>
-                        <li><a href="#" class="text-muted-custom text-decoration-none small">Our Story</a></li>
-                        <li><a href="#" class="text-muted-custom text-decoration-none small">Journal</a></li>
-                        <li><a href="#" class="text-muted-custom text-decoration-none small">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <h5 class="text-uppercase fw-bold mb-3">Stay Updated</h5>
-                    <p class="small text-muted-custom">Subscribe to our newsletter for exclusive offers and news.</p>
-                    <form class="newsletter-form d-flex gap-2">
-                        <input type="email" class="form-control" placeholder="Enter your email" required>
-                        <button type="submit" class="btn"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                    <div class="social-icons mt-4">
-                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center  border-top mt-2">
-                <span class="small text-muted-custom">&copy; 2025 Dream Home. All Rights Reserved.</span>
-            </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand"><i class="bi bi-house-door-fill"></i> Real Estate</a>
+          <p class="footer-tagline">Building places you're proud to call home — today, tomorrow, and for every milestone in between.</p>
+          <p class="footer-heading mb-2">Stay Updated</p>
+          <div class="footer-newsletter">
+            <input type="email" class="form-control" placeholder="Your email address">
+            <button class="footer-newsletter-btn" type="button"><i class="bi bi-send-fill"></i></button>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer-social-icon"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
-    </footer>
-    <script src="public/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="property.html">Properties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <h6 class="footer-heading">Property Types</h6>
+          <ul class="footer-links">
+            <li><a href="property.html">Apartments</a></li>
+            <li><a href="property.html">Villas</a></li>
+            <li><a href="property.html">Townhouses</a></li>
+            <li><a href="property.html">Penthouses</a></li>
+            <li><a href="property.html">Office Spaces</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h6 class="footer-heading">Contact Us</h6>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div><strong>Our Office</strong>9876 Wilshire Blvd, Suite 500<br>Beverly Hills, CA 90210</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <div><strong>Phone</strong>(310) 555-0100</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <div><strong>Email</strong>info@dreamhome.com</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <div><strong>Hours</strong>Mon–Fri: 9AM–6PM &nbsp;|&nbsp; Sat: 10AM–4PM</div>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-bottom">
+        <p class="footer-copyright mb-0">&copy; 2025 <span>Dream Home</span>. All Rights Reserved. Built with care.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-</html>
-
-</body>
-
-<!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="public/js/script.js"></script>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="public/js/script.js"></script>
 </body>
 
 </html>
